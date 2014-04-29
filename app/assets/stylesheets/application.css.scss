@@ -36,11 +36,12 @@ color: #b94a48;
 text-align: left;
 }
 
-.alert-success {
-background-color: #dff0d8;
-border-color: #d6e9c6;
-color: #468847;
-text-align: left;
+.contain .alert-success {
+	margin-top: 30px;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	color: #468847;
+	text-align: left;
 }
 
 .alert-notice {
@@ -243,5 +244,5 @@ body {
 }
 
 .entry {
-	color: #3EA7A7; 
+	margin-top: 30px;
 }
