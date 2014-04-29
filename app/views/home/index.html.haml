@@ -1,7 +1,34 @@
 .container
   .row
-    .span12
-      %h1 Home#index
-      %p Find me in app/views/home/index.html.haml
-
-
+    .span6
+      .content-container
+        %h{style: "font-size: 28px; color: #FF9702;"} Bringing New Ideas to Senior Living
+  .row
+    .span1
+    #video.span10
+      #video_top
+      #video_main{style: "width:100%;"}
+        .fluid-width-video-wrapper
+          %iframe#video_clip{allowfullscreen: "", frameborder: "0", mozallowfullscreen: "", src: "//www.youtube.com/embed/9A2nhjijhPs?autoplay=0&autohide=1&fs=1&rel=0&hd=1&wmode=opaque&enablejsapi=1", webkitallowfullscreen: ""}
+      #video_bot
+    .span1{style: "padding-top:30px;margin-bottom:40px;margin-left:30px;"}
+      %a.twitter-share-button{"data-dnt" => "true", "data-size" => "large", "data-text" => "Check out HomeForGrandma! It's 90 seconds to find senior living!", "data-via" => "homeforgrandma", href: "https://twitter.com/share"} Tweet
+      :javascript
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+      %a{"data-pin-config" => "beside", "data-pin-do" => "buttonPin", "data-pin-height" => "28", href: "//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fhomeforgrandma.com&media=https%3A%2F%2Ffarm4.staticflickr.com%2F3720%2F13568102535_b13df5b923.jpg&description=HomeForGrandma%3A%20Bringing%20new%20ideas%20to%20senior%20living"}
+        %img{src: "//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_28.png"}/
+      / Please call pinit.js only once per page
+      %script{async: "", src: "//assets.pinterest.com/js/pinit.js", type: "text/javascript"}
+    .row
+  #slider
+    #slider_container.container
+      .slides_container{style: "overflow: hidden; position: relative; display: block;"}
+        .slides_control{style: "position: relative; width: 3600px; height: 120px; left: -1200px;"}
+          .row{style: "margin-top: 25px; position: absolute; top: 0px; left: 1200px; z-index: 0; opacity: 1;"}
+            .span10.offset1
+              .span3{style: "margin-left:0px; margin-top:5px;"}
+                %h1 Contact Us
+              .span7{style: "margin-top:1px;"}
+                .m700 HomeForGrandma Inc.
+                .m700 9868 Las Tunas Drive, Temple City, CA 91780, USA
+                .m700 (626)451-0023

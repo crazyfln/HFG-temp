@@ -21,11 +21,11 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.brand{:href => root_url}
-        brand
+      %a#logo{:href => root_url}
+        Home For Grandma
       .nav-collapse.collapse
         %ul.nav.pull-right
-          %li
-            = link_to t('Contact'), new_contact_path
+          %li{style: "margin-top:5px;"}
+            = link_to t('Email Us'), new_contact_path
 
 = yield
