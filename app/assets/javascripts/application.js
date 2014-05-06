@@ -15,3 +15,16 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+$(document).ready( function() {
+	$(function() {
+		$(window).resize(function() {
+			resizeMainSection();
+		});
+	});
+	
+	function resizeMainSection() {
+		$('#main-figure').css({
+			height: $(window).height()
+		});
+	};
+}); 

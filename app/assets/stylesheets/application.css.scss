@@ -66,12 +66,12 @@ body {
 #logo {
     background: url("hfg_logo.png") no-repeat scroll left top rgba(0, 0, 0, 0);
     background-size: contain;
-    width: 200px;
-    height: 40px;
+    width: 300px;
+    height: 55px;
     display: inline-block;
     text-indent: -9999px;
     float: left;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 #logo-img {
@@ -240,9 +240,20 @@ body {
 }
 
 .navbar .nav > li > a {
-	color: #3EA7A7;  
+	color: #3EA7A7;
+    font-size: 20px;      
 }
 
 .entry {
 	margin-top: 30px;
+}
+
+.navbar .nav > li {
+    margin-top: 20px;
+}
+
+.figure-container {
+    background: url("background.png") no-repeat;
+    background-size: cover;
+    width: 100%;
 }
