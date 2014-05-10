@@ -12,19 +12,34 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.turbolinks
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
-$(document).ready( function() {
-	$(function() {
-		$(window).resize(function() {
-			resizeMainSection();
-		});
+
+ $(document).ready( function() {
+ 	
+	$(".various").fancybox({
+		maxWidth	: 1000,
+		maxHeight	: 800,
+		fitToView	: false,
+		width		: '100%',
+		height		: '100%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
 	});
+
+	resizeMainSection();
+
 	
 	function resizeMainSection() {
 		$('#main-figure').css({
 			height: $(window).height()
 		});
 	};
-}); 
+
+	$("video-modal").modal();
+});
+

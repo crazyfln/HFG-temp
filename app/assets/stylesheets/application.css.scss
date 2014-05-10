@@ -220,7 +220,7 @@ body {
 }
 
 #slider {
-    background: none repeat scroll 0 0 #29AAD2;
+    background: none repeat scroll 0 0 #212828;
     box-shadow: 0 1px 0 0 #3283BA, 0 2px 0 0 #FFFFFF;
     color: #297EA5;
     padding: 30px 0;
@@ -253,7 +253,79 @@ body {
 }
 
 .figure-container {
-    background: url("background.png") no-repeat;
+    background: url("background1.png") no-repeat;
     background-size: cover;
     width: 100%;
+}
+
+.video-container{
+    width: 300px;
+    height: 100px;
+    position: relative;
+    top: 80%;
+    left: 40%;    
+}
+
+.play {
+    opacity: 0.85;
+    background: url("playbutton.png") no-repeat;
+    background-size: 78px auto;
+    display: block;
+    height: 75px;
+    margin-left: -37px;
+    margin-top: -37px;
+    border-radius: 50%;
+    font-size: 0;
+    margin-left: -25px;
+    position: absolute;
+    float: right;
+    top: 1%;
+    left: 50%;
+    width: 75px;
+}
+
+.play:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.title-word {
+    clear: left;
+    display: block;
+    float: left;
+    margin-bottom: 7px;
+}
+.bold {
+    font-family: 'Avenir Next LT W01 Bold';
+}
+
+.paper-headline {
+    position: relative;
+    top: 35%;
+    left: 20%;
+    color: #F2EDE3;
+    font-size: 70px;
+    line-height: 0.85;
+    text-rendering: optimizelegibility;
+}
+.toUpper {
+    text-transform: uppercase;
+}
+
+.center {
+    font-size: 55px;
+    margin: 40px 150px;
+}
+
+.intro {
+    clear: left;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    color: #F2EDE3;
+    font-size: 20px;
+    line-height: 0.85;
+    text-rendering: optimizelegibility;
 }
