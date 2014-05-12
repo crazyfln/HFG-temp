@@ -303,13 +303,18 @@ body {
 }
 
 .paper-headline {
-    position: fixed;
+    margin-left: 100px;
+    width: 800px;
+    height: 300px;
+    position: relative;
     top: 35%;
     left: 5%;
     color: #F2EDE3;
     font-size: 70px;
     line-height: 0.85;
     text-rendering: optimizelegibility;
+    display: inline-block;
+    float: left;
 }
 .toUpper {
     text-transform: uppercase;
@@ -322,7 +327,7 @@ body {
 
 .intro {
     clear: left;
-    display: block;
+    display: inline-block;
     float: left;
     position: absolute;
     top: 50%;
