@@ -13,11 +13,33 @@
  */
 @import "bootstrap";
 
+
+@font-face {
+    font-family: 'Museo700Regular'; /*a name to be used later*/
+    src: url('Museo700-Regular.otf') format("opentype"); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'AvenirNextLTW01-Regular'; /*a name to be used later*/
+    src: url('AvenirNextLTW01-Regular.ttf') format("truetype"); /*URL to font*/
+}
+
 body {
+    background-color: #F5F3EC;
     padding:0;
     margin:0;
     height:100%;
     width: 100%;
+    font-family: 'AvenirNextLTW01-Regular',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    padding:27px 0 0;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: 'Avenir Next LT W01 Bold';
+    font-size: 65px;
+    font-weight: normal;
 }
 
 .hidden { display: none; }
@@ -52,18 +74,6 @@ background-color: #dff0d8;
 border-color: #d6e9c6;
 color: #468847;
 text-align: left;
-}
-
-@font-face {
-    font-family: 'Museo700Regular'; /*a name to be used later*/
-    src: url('Museo700-Regular.otf') format("opentype"); /*URL to font*/
-}
-
-body {
-	padding:27px 0 0;
-	background: url("stitched_wool.png") repeat scroll left top #FFFFFF;
-	font-family: 'Museo700Regular',arial,helvetica,sans-serif;
-    font-weight: normal;
 }
 
 #logo {
@@ -158,11 +168,6 @@ body {
 .header .span12 strong {
     box-shadow: 0 1px 0 0 #CDCDCD, 0 2px 0 0 #FFFFFF, 0 3px 0 0 #CDCDCD, 0 4px 0 0 #FFFFFF;
     color: #0D6080;
-}
-
-.m700, strong, .bold, b {
-    font-family: 'Museo700Regular',arial,helvetica,sans-serif;
-    font-weight: normal;
 }
 
 .mc_custom_border_hdr {
@@ -307,7 +312,7 @@ body {
     width: 800px;
     height: 300px;
     position: relative;
-    top: 35%;
+    top: 31%;
     left: 5%;
     color: #F2EDE3;
     font-size: 70px;
@@ -330,10 +335,40 @@ body {
     display: inline-block;
     float: left;
     position: absolute;
-    top: 50%;
-    left: 20%;
+    top: 55%;
+    left: 22%;
     color: #F2EDE3;
     font-size: 20px;
     line-height: 0.85;
     text-rendering: optimizelegibility;
+}
+
+.sized {
+    height: 100%;
+    overflow: visible;
+    position: relative;
+    width: 890px;
+    margin: 40px 20px;
+    padding-top: 40px;
+}
+
+.sectionTitle {
+    text-align: center;
+    color: #DC8A3F;
+}
+
+.sectionDescription {
+    color: #3A776F;
+    clear: both;
+    font-size: 24px;
+    margin-bottom: 70px;
+    padding-left: 140px;
+    padding-right: 100px;
+    width: auto;
+    line-height: 150%;
+    padding-top: 10px;
+}
+
+.noBold {
+    font-family: 'AvenirNextLTW01-Regular';
 }
