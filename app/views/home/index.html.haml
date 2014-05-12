@@ -1,7 +1,7 @@
 #main-figure
   .figure-container{style:"width: 100%; height: 100%;"}
     .paper-headline.toUpper
-      %span.title-word.bold Bringing New Ideas
+      %span.title-word Bringing New Ideas
       %span.title-word.center To
       %span.title-word Senior Living
     .video-container
@@ -13,8 +13,14 @@
     %h1.toUpper.sectionTitle
       %span.noBold Senior Housing.
     %br
-    %h1.toUpper.sectionTitle Simplified.
+    %h1.toUpper.sectionTitle.noBold Simplified.
     .sectionDescription Let us help you find the right senior living community.
+  .row
+    .left
+      .pic.firstcommunity
+        %img.tile.bottom{:alt => "", :src => "http://media-cache-ec0.pinimg.com/736x/f7/b3/d2/f7b3d20793cd2d866c6649854a505429.jpg"}/
+    .right
+      %p.description High quality community photos
 
 #slider
   #slider_container.container

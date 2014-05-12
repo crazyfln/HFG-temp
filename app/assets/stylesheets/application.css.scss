@@ -312,21 +312,22 @@ text-align: left;
     width: 800px;
     height: 300px;
     position: relative;
-    top: 31%;
+    top: 35%;
     left: 5%;
     color: #F2EDE3;
-    font-size: 70px;
+    font-size: 60px;
     line-height: 0.85;
     text-rendering: optimizelegibility;
     display: inline-block;
     float: left;
+    text-shadow: 5px 5px 5px #2C2314;
 }
 .toUpper {
     text-transform: uppercase;
 }
 
 .center {
-    font-size: 55px;
+    font-size: 60px;
     margin: 40px 150px;
 }
 
@@ -366,9 +367,55 @@ text-align: left;
     padding-right: 100px;
     width: auto;
     line-height: 150%;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .noBold {
     font-family: 'AvenirNextLTW01-Regular';
+}
+
+.left {
+    display: inline-block;
+    float: left;
+    width: 43.2%;
+    margin-bottom: 20px;
+}
+
+.right {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.pic {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+}
+
+.pic .front {
+    transform-origin: 8px 8px 0;
+    transform-style: preserve-3d;
+    transition-duration: 0.75s;
+    z-index: 2;
+}
+.pic .tile {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.pic .front {
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+}
+.firstcommunity {
+    width: 400px;
+    height: 270px;
+}
+
+.description {
+    margin-top: 100px;
+    font-size: 22px;
 }
