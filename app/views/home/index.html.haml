@@ -15,17 +15,24 @@
     %br
     %h1.toUpper.sectionTitle.noBold Simplified.
     .sectionDescription Let us help you find the right senior living community.
-  .row
-    .left
-      .pic.firstcommunity
-        %img.tile.bottom{:alt => "", :src => "http://media-cache-ec0.pinimg.com/736x/f7/b3/d2/f7b3d20793cd2d866c6649854a505429.jpg"}/
-    .right
-      %p.description High quality community photos
 
-#slider
-  #slider_container.container
-    .slides_container{style: "overflow: hidden; position: relative; display: block;"}
-      .slides_control{style: "position: relative; width: 3600px; height: 120px; left: -1200px;"}
+  #sliderFrame
+    #slider
+      %img{src: "http://media-cache-ec0.pinimg.com/originals/0d/d8/41/0dd8413e636e154177a2a0bd7bd6db32.jpg", alt:"A+ Senior Care Manor, Temple City, CA"}/
+      %img{src: "http://media-cache-ak0.pinimg.com/originals/ea/c2/35/eac235ef919a7c24b5713ecfab68504b.jpg", alt:"Arcadia Retirement Village, Arcadia, CA"}/
+      %img{alt: "#htmlcaption", src: "http://media-cache-ak0.pinimg.com/originals/c5/33/d2/c533d2c4a7dc51c86135677640ea9953.jpg"}/
+      #htmlcaption{style: "display: none;"}
+        %p Assisted Comfort Home, Woodland Hills, CA
+        Link to 
+        = succeed "." do
+          %a{href: "http://www.google.com/"} Google
+    / Custom navigation buttons on both sides
+    .sectionDescription2 We provide high-quality community photos.
+
+#footer
+  .container
+    .footer_container{style: "overflow: hidden; position: relative; display: block;"}
+      .footer_control{style: "position: relative; width: 3600px; height: 120px; left: -1200px;"}
         .row{style: "margin-top: 25px; position: absolute; top: 0px; left: 1200px; z-index: 0; opacity: 1;"}
           .span10.offset1
             .span3{style: "margin-left:0px; margin-top:5px;"}

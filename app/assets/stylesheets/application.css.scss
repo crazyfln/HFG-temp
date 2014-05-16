@@ -227,21 +227,21 @@ text-align: left;
     width: 100%;
 }
 
-#slider {
+#footer {
     background: none repeat scroll 0 0 #212828;
     box-shadow: 0 1px 0 0 #3283BA, 0 2px 0 0 #FFFFFF;
     color: #297EA5;
     padding: 30px 0;
 }
 
-#slider .m700 {
+#footer .m700 {
     color: #FFFFFF;
     font-size: 18px;
     margin: 5px 0;
     line-height: 130%;
 }
 
-#slider p {
+#footer p {
 	margin-top: 5px;
     color: #FFFFFF;
     font-size: 20px;
@@ -364,11 +364,23 @@ text-align: left;
     clear: both;
     font-size: 24px;
     margin-bottom: 70px;
-    padding-left: 140px;
+    padding-left: 160px;
     padding-right: 100px;
     width: auto;
     line-height: 150%;
     padding-top: 20px;
+}
+
+.sectionDescription2 {
+    color: #3A776F;
+    clear: both;
+    font-size: 24px;
+    margin-bottom: 70px;
+    padding-left: 210px;
+    padding-right: 100px;
+    width: auto;
+    line-height: 150%;
+    padding-top: 40px;
 }
 
 .noBold {
