@@ -5,6 +5,8 @@ gem 'rails', '4.0.2'
 
 gem 'devise', '3.1.1'
 
+gem 'meta-tags', '2.0.0'
+
 group :development do
   gem 'sqlite3', '1.3.8'
 end
