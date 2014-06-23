@@ -5,6 +5,7 @@
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     %meta{content: " Bringing new ideas to senior living. Reward your loved ones by using our search engine for assisted living places.", name: "description"}/
+    = render 'layouts/footer'
 
   %body
   - flash.each do |name, msg|
@@ -29,4 +30,3 @@
               = link_to t('Email Us'), new_contact_path
 
   = yield
-  = render 'layouts/footer'
