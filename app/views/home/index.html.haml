@@ -1,13 +1,13 @@
 .mission.container
-  .video-container
-    %a.play.various{:class => "fancybox.iframe", :href => "http://www.youtube.com/embed/U1NuFyEfWfQ?autoplay=1"} Youtube (iframe)
-    %span.intro Watch Our Intro Video
   .sized
     %h1.toUpper.sectionTitle
       %span.noBold Bringing New Ideas To
     %br
     %h1.toUpper.sectionTitle.noBold Senior Living.
     .sectionDescription Our innovative new website is almost ready. We will be launching soon!
+  .video-container
+    %iframe{:class => "various", allowfullscreen: "", frameborder: "0", height: "400", src: "//www.youtube.com/embed/U1NuFyEfWfQ", width: "640"}
+  .intro Watch Our Intro Video
 
   #sliderFrame
     #slider
